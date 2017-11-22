@@ -9,29 +9,22 @@ package workshopoop;
  *
  * @author Justus
  */
-public class Building {
+public class Building implements IBuilding {
     
     private String name;
     private String adress;
     private int numbOfSensors;
-    private double AirQuality;
-    private double temperature;
+    
 
-    public Building(String name, String adress, int numbOfSensors, double AirQuality, double temperature) {
+    public Building(String name, String adress, int numbOfSensors) {
         this.name = name;
         this.adress = adress;
         this.numbOfSensors = numbOfSensors;
-        this.AirQuality = AirQuality;
-        this.temperature = temperature;
     }
     
     
     
     //Arraylist<Sensor>
-    
-    //adress
-    
-    //getAdress;
     
     //Building(adress, name, sensor)
 
@@ -47,21 +40,14 @@ public class Building {
         return numbOfSensors;
     }
 
-    public double getAirQuality() {
-        return AirQuality;
+    @Override
+    public String getNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setAirQuality(double AirQuality) {
-        this.AirQuality = AirQuality;
+    @Override
+    public int getNumberOfSensors() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    public double getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(double temperature) {
-        this.temperature = temperature;
-    }
-    
     
 }
