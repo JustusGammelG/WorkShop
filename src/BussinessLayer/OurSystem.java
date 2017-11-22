@@ -45,12 +45,17 @@ public class OurSystem {
         system.addBuilding("Building3", building3);
         
         system.printBuildings();
+        System.out.println("*******************************");
+        
         System.out.println(" removing.....");
+        System.out.println("*******************************");
         system.removeBuilding("Building1");
         system.printBuildings();
         
-        
+        System.out.println("*******************************");
         System.out.println("Sensor readings");
+        
+        System.out.println("*******************************");
         Sensor sensor1 = new Sensor("TempSensor1");
         building3.addSensor(sensor1);
         sensor1.setReading(50);
