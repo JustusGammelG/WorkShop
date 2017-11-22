@@ -5,10 +5,14 @@
  */
 package workshopoop;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Justus
  */
 public class System {
+    //ArrayList<Building>
+    
     
 }

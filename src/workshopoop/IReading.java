@@ -10,5 +10,5 @@ package workshopoop;
  * @author Justus
  */
 public interface IReading {
-    
+    //Reading(Time, value, type, ID)
 }
