@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package BussinessLayer;
+package Bussiness;
+
+import Acquaintance.IBuilding;
+import Acquaintance.IReading;
+import Acquaintance.ISensor;
 
 /**
  *
  * @author Alexa
  */
-public class BusinessFacade {
+public class BusinessFacade implements SutPikMand {
     
 }

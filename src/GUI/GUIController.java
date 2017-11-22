@@ -5,7 +5,7 @@
  */
 package GUI;
 
-import BussinessLayer.Building;
+import Bussiness.Building;
 import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
