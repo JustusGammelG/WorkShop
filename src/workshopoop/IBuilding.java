@@ -10,7 +10,8 @@ package workshopoop;
  * @author Justus
  */
 public interface IBuilding {
-    ArrayList<> sensors = new ArrayList<Sensor>;
-    String adress;
+    public String getNumber();
+    public String getAdress();
+    public int getNumberOfSensors();
     
 }
