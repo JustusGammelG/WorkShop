@@ -44,7 +44,7 @@ public class Building implements IBuilding {
     public ArrayList<ISensor> getSensors() {
         return sensors;
     }
-
+    
     @Override
     public void printBuildingReadings() {
         for(ISensor sensor: sensors){
