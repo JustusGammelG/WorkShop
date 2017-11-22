@@ -5,6 +5,7 @@
  */
 package BussinessLayer;
 import Aqcuaintance.IReading; 
+import java.util.Date;
 
 /**
  *
@@ -12,16 +13,17 @@ import Aqcuaintance.IReading;
  */
 public class Reading implements IReading{
     double value;
-    double timeStamp;
+    Date date;
     String id;
 
     public Reading(double value) {
-        this.timeStamp = System.currentTimeMillis();
+        this.date = new Date();
         this.value = value;
        
     }
     
+    
     public String toString(){
-        return "Timestamp: " + timeStamp + "\n Value: " + value;
+        return "Timestamp: " + date + "\n Value: " + value;
     }
 }
