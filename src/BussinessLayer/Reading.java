@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package BussinessLayer;
-import Aqcuaintance.IReading; 
+import Acquaintance.IReading; 
 import java.util.Date;
 
 /**

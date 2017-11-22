@@ -5,8 +5,8 @@
  */
 package BussinessLayer;
 
-import Aqcuaintance.IReading;
-import Aqcuaintance.ISensor;
+import Acquaintance.IReading;
+import Acquaintance.ISensor;
 import java.util.ArrayList;
 import java.util.Collection;
 

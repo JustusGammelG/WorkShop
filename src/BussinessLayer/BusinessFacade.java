@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aqcuaintance;
+package BussinessLayer;
 
 /**
  *
- * @author Justus
+ * @author Alexa
  */
-public interface IReading {
-    //Reading(Time, value, type, ID)
+public class BusinessFacade {
+    
 }
