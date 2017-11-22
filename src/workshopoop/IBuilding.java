@@ -13,5 +13,6 @@ public interface IBuilding {
     public String getNumber();
     public String getAdress();
     public int getNumberOfSensors();
-    
+    public int getTemperature();
+    public int getAirQuality();
 }
