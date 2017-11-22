@@ -12,14 +12,7 @@ import java.util.ArrayList;
  * @author Justus
  */
 public interface ISensor {
-    
-    //ArrayList<Reading>
-    
-    //setReading(Value)
-    
-    //getReading()
-    
-    //getHistory()
-    
-    //Sensor(ID, Reading)
+
+
+
 }
