@@ -49,6 +49,8 @@ public class OurSystem {
         system.removeBuilding("Building1");
         system.printBuildings();
         
+        
+        System.out.println("Sensor readings");
         Sensor sensor1 = new Sensor("TempSensor1");
         building3.addSensor(sensor1);
         sensor1.setReading(50);
