@@ -10,5 +10,13 @@ package workshopoop;
  * @author Justus
  */
 public class Building {
-    //test
+    //Arraylist<Sensor>
+    
+    //adress
+    
+    //getAdress;
+    
+    //Building(adress, name, sensor)
+    
+    
 }
