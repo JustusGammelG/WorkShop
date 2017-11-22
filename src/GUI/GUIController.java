@@ -7,7 +7,12 @@ package GUI;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -15,6 +20,23 @@ import javafx.fxml.Initializable;
  * @author Pottemuld
  */
 public class GUIController implements Initializable {
+
+    @FXML
+    private Tab buildingTab;
+    @FXML
+    private ListView<?> buildingListView;
+    @FXML
+    private Button addButton;
+    @FXML
+    private Button removeButton;
+    @FXML
+    private TextField nameTextField;
+    @FXML
+    private TextField addressTextField;
+    @FXML
+    private Tab sensorTab;
+    @FXML
+    private Tab readingTab;
 
     /**
      * Initializes the controller class.
