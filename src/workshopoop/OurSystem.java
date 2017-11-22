@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Justus
  */
-public class System {
+public class OurSystem {
     //ArrayList<Building>
     
     
