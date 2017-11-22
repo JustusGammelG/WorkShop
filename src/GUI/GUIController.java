@@ -5,7 +5,7 @@
  */
 package GUI;
 
-import Bussiness.Building;
+import Business.Building;
 import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -35,7 +35,6 @@ public class GUIController implements Initializable {
     private Button removeButton;
     @FXML
     private TextField nameField;
-    @FXML
     private TextField adressField;
     @FXML
     private Tab sensorTab;
@@ -48,6 +47,8 @@ public class GUIController implements Initializable {
     
     private ObservableList<Building> buildings;
     private Object listView;
+    @FXML
+    private TextField addressField;
     
     
     
@@ -59,7 +60,6 @@ public class GUIController implements Initializable {
     }
     
     //Add Building method
-    @FXML
     private void addButton(ActionEvent event) {
         if (!nameField.getText().equals("") && !adressField.getText().equals("")){
             Building newBuilding = new Building(nameField.getText(), adressField.getText());
@@ -68,6 +68,10 @@ public class GUIController implements Initializable {
             adressField.clear();
         }
         
+    }
+
+    @FXML
+    private void addButton(javafx.event.ActionEvent event) {
     }
     
 }
