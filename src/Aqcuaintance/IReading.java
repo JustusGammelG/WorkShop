@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package workshopoop;
+package Aqcuaintance;
 
 /**
  *
- * @author sdown
+ * @author Justus
  */
-public class Reading {
-    
+public interface IReading {
+    //Reading(Time, value, type, ID)
 }

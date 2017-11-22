@@ -3,16 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package workshopoop;
-
+package Aqcuaintance;
 import java.util.ArrayList;
-
 /**
  *
  * @author Justus
  */
 public interface ISensor {
 
+    public IReading getLatestReading();
+    public ArrayList<IReading> getHistory();
+    public void setReading(double value);
+    
 
 
 }

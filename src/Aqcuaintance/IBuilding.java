@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package workshopoop;
-
+package Aqcuaintance;
 import java.util.ArrayList;
-
 /**
  *
  * @author Justus
  */
-public class OurSystem {
-    //ArrayList<Building>
-    
-    
+public interface IBuilding {
+    public String getName();
+    public String getAdress();
+    public void addSensor(ISensor sensor);
+    public ArrayList<ISensor> getSensors();
+    public void printBuildingReadings();
 }
