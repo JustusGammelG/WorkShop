@@ -33,36 +33,36 @@ public class OurSystem {
     }
  
     public static void main(String[] args) {
-        Building building1 = new Building("Building1", "Posthuset");
-        Building building2 = new Building("Building2", "Posthuset123");
-        Building building3 = new Building("Building3", "Posthuset321");
-        
-        OurSystem system = new OurSystem();
-        
-        
-        system.addBuilding("Building1", building1);
-        system.addBuilding("Building2", building2);
-        system.addBuilding("Building3", building3);
-        
-        system.printBuildings();
-        System.out.println("*******************************");
-        
-        System.out.println(" removing.....");
-        System.out.println("*******************************");
-        system.removeBuilding("Building1");
-        system.printBuildings();
-        
-        System.out.println("*******************************");
-        System.out.println("Sensor readings");
-        
-        System.out.println("*******************************");
-        Sensor sensor1 = new Sensor("TempSensor1");
-        building3.addSensor(sensor1);
-        sensor1.setReading(50);
-        sensor1.setReading(100);
-        sensor1.setReading(200);
-        
-        system.printBuildingSpecificReadings(building3);
+//        Building building1 = new Building("Building1", "Posthuset");
+//        Building building2 = new Building("Building2", "Posthuset123");
+//        Building building3 = new Building("Building3", "Posthuset321");
+//        
+//        OurSystem system = new OurSystem();
+//        
+//        
+//        system.addBuilding("Building1", building1);
+//        system.addBuilding("Building2", building2);
+//        system.addBuilding("Building3", building3);
+//        
+//        system.printBuildings();
+//        System.out.println("*******************************");
+//        
+//        System.out.println(" removing.....");
+//        System.out.println("*******************************");
+//        system.removeBuilding("Building1");
+//        system.printBuildings();
+//        
+//        System.out.println("*******************************");
+//        System.out.println("Sensor readings");
+//        
+//        System.out.println("*******************************");
+//        Sensor sensor1 = new Sensor("TempSensor1");
+//        building3.addSensor(sensor1);
+//        sensor1.setReading(50);
+//        sensor1.setReading(100);
+//        sensor1.setReading(200);
+//        
+//        system.printBuildingSpecificReadings(building3);
         
     }
 }
