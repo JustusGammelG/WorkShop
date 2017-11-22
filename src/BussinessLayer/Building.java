@@ -51,10 +51,10 @@ public class Building implements IBuilding {
             for(IReading reading: sensor.getHistory()){
                 System.out.println(reading);
             }
-            
-            
         }
     }
+    
+    
     
     @Override
     public String toString(){

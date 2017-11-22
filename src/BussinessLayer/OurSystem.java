@@ -28,7 +28,7 @@ public class OurSystem {
         }
     }
     
-    public void printBuildingReadings(Building building){
+    public void printBuildingSpecificReadings(Building building){
         building.printBuildingReadings();
     }
  
@@ -62,7 +62,7 @@ public class OurSystem {
         sensor1.setReading(100);
         sensor1.setReading(200);
         
-        system.printBuildingReadings(building3);
+        system.printBuildingSpecificReadings(building3);
         
     }
 }
