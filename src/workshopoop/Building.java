@@ -10,5 +10,5 @@ package workshopoop;
  * @author Justus
  */
 public class Building {
-    
+    //test
 }
