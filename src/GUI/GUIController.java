@@ -5,8 +5,6 @@
  */
 package GUI;
 
-//Imported Acquaintence for layering
-import Acquaintance.IBusiness;
 import Business.Building;
 import java.awt.event.ActionEvent;
 import java.net.URL;
@@ -17,8 +15,10 @@ import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 /**
  * FXML Controller class
@@ -31,24 +31,11 @@ public class GUIController implements Initializable {
     private Tab buildingTab;
     @FXML
     private ListView<Building> buildingListView;
-    @FXML
-    private Button addButton;
-    @FXML
-    private Button removeButton;
-    @FXML
     private TextField nameField;
     private TextField adressField;
     @FXML
-    private Tab sensorTab;
-    @FXML
     private Tab readingTab;
-    
-    //IBusiness for layering
-    static IBusiness businessFacade; 
 
-    public GUIController(){
-        
-    }
     /**
      * Initializes the controller class.
      */
@@ -56,13 +43,29 @@ public class GUIController implements Initializable {
     private ObservableList<Building> buildings;
     private Object listView;
     @FXML
-    private TextField addressField;
+    private TextField buildingNameField;
+    @FXML
+    private TextField buildingAddressField;
+    @FXML
+    private Button removeBuildingButton;
+    @FXML
+    private Button addBuildingButton;
+    @FXML
+    private ListView<?> sensorListView;
+    @FXML
+    private Button addSensorButton;
+    @FXML
+    private Button sensorRemoveButton;
+    @FXML
+    private TextField sensorIDField;
+    @FXML
+    private RadioButton CO2RadioButton;
+    @FXML
+    private ToggleGroup sensorTypeToggleGroup;
+    @FXML
+    private RadioButton temperatureRadioButton;
     
     
-    //Inject for layering
-    public static void injectBusiness(IBusiness business){
-        businessFacade = business; 
-    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -82,9 +85,5 @@ public class GUIController implements Initializable {
         
     }
 
-    @FXML
-    private void addBuilding(javafx.event.ActionEvent event) {
-        businessFacade.addBuilding((nameField, adressField);
-    }
     
 }
