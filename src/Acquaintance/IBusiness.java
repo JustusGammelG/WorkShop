@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 package Acquaintance;
-import Business.Building; 
-import Business.Sensor;
+import Business.BusinessFacade;
 import java.util.ArrayList;
 
 /**

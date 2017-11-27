@@ -24,8 +24,8 @@ public class BusinessFacade implements IBusiness {
     ArrayList<Building> buildingList = new ArrayList<Building>();
     
     @Override
-    public void addBuilding(Building building) {
-        buildingList.add(building);
+    public void addBuilding(Building Building) {
+        buildingList.add(Building);
         
     }
 
