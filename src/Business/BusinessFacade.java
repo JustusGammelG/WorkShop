@@ -5,10 +5,8 @@
  */
 package Business;
 
-import Acquaintance.IBuilding;
-import Acquaintance.IReading;
-import Acquaintance.ISensor;
 import Acquaintance.IBusiness;
+import java.util.ArrayList;
 
 /**
  *
@@ -23,29 +21,32 @@ public class BusinessFacade implements IBusiness {
         business = _business;
     }
 
+    ArrayList<Building> buildingList = new ArrayList<Building>();
+    
     @Override
-    public void addBuilding(String name, String adress) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void addBuilding(Building building) {
+        buildingList.add(building);
+        
     }
 
     @Override
-    public void removeBuilding(String name, String adress) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void removeBuilding(Building building) {
+        buildingList.remove(building);
     }
 
     @Override
     public void addSensor(Building building, String id, String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
 
     @Override
     public void removeSensor(Building building, String id, String type) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
     public void getReading(Sensor sensor) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     
