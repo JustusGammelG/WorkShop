@@ -82,8 +82,8 @@ public class GUIController implements Initializable {
         
      @FXML
     private void addBuilding(ActionEvent event) {
-        if(buildingNameField.getText() != "" && buildingAddressField.getText() != "") {
-            business.addBuilding(buildingNameField.getText(), buildingAddressField.getText());
+        if(!"".equals(buildingNameField.getText()) || !"".equals(buildingAddressField.getText())) {
+            business.addBuilding();
         }
     }
   
