@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Acquaintance;
+import Business.Building; 
 
 /**
  *
@@ -11,6 +12,10 @@ package Acquaintance;
  */
 public interface IBusiness {
     
+    public void addBuilding(String name, String adress);
+    public void removeBuilding(String name, String adress);
+    public void addSensor(Building building, String id, String type);
+    public void removeSensor(Building building, String id, String type);
     
     
 }
