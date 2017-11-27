@@ -14,9 +14,9 @@ import java.util.ArrayList;
  */
 public interface IBusiness {
     
-    public void addBuilding(String name, String adress);
+    public void addBuilding(Building building);
     
-    public void removeBuilding(String name, String adress);
+    public void removeBuilding(Building building);
     
     public void addSensor(Building building, String id, String type);
     
