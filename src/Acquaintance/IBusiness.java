@@ -15,12 +15,19 @@ import java.util.ArrayList;
 public interface IBusiness {
     
     public void addBuilding(String name, String adress);
+    
     public void removeBuilding(String name, String adress);
+    
     public void addSensor(Building building, String id, String type);
+    
     public void removeSensor(Building building, String id, String type);
+    
     public void getReading(Sensor sensor);
+    
     public void setReading(double value);
+    
     ArrayList<Building> buildingList = new ArrayList<Building>();
+    
     ArrayList<Sensor> sensorList = new ArrayList<>();
     
 }

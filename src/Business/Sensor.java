@@ -19,6 +19,13 @@ public class Sensor implements ISensor {
     IReading value;
     
     ArrayList<IReading> history;
+    
+    //Layering injection from line 24 to line 28.
+    static ISensor sencor;
+    
+    public static void injectSencor(ISensor _sencor){
+        sencor = _sencor;
+    }
 
     public Sensor(String ID, Reading value, ArrayList<IReading> history) {
         this.ID = ID;

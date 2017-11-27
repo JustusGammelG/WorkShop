@@ -5,6 +5,7 @@
  */
 package GUI;
 
+//Imported Acquaintence for layering
 import Acquaintance.IBusiness;
 import Business.Building;
 import java.awt.event.ActionEvent;
@@ -42,7 +43,8 @@ public class GUIController implements Initializable {
     @FXML
     private Tab readingTab;
     
-    IBusiness businessFacade; 
+    //IBusiness for layering
+    static IBusiness businessFacade; 
 
     public GUIController(){
         
@@ -56,8 +58,10 @@ public class GUIController implements Initializable {
     @FXML
     private TextField addressField;
     
-    public void injectBusiness(IBusiness business){
-        this.businessFacade = business; 
+    
+    //Inject for layering
+    public static void injectBusiness(IBusiness business){
+        businessFacade = business; 
     }
     
     @Override
@@ -79,8 +83,8 @@ public class GUIController implements Initializable {
     }
 
     @FXML
-    private void addButton(javafx.event.ActionEvent event) {
-        businessFacade.
+    private void addBuilding(javafx.event.ActionEvent event) {
+        businessFacade.addBuilding((nameField, adressField);
     }
     
 }

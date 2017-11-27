@@ -16,6 +16,12 @@ import Acquaintance.IBusiness;
  */
 
 public class BusinessFacade implements IBusiness {
+    
+    static IBusiness business;
+    
+    public static void injectBusiness(IBusiness _business) {
+        business = _business;
+    }
 
     @Override
     public void addBuilding(String name, String adress) {
@@ -42,9 +48,10 @@ public class BusinessFacade implements IBusiness {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    
     @Override
-    public void setReading(double value) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setReading(double value){
+        
     }
     
     
