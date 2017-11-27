@@ -5,6 +5,7 @@
  */
 package GUI;
 
+import Acquaintance.IBusiness;
 import Business.Building;
 import java.awt.event.ActionEvent;
 import java.net.URL;
@@ -40,7 +41,12 @@ public class GUIController implements Initializable {
     private Tab sensorTab;
     @FXML
     private Tab readingTab;
+    
+    IBusiness businessFacade; 
 
+    public GUIController(){
+        
+    }
     /**
      * Initializes the controller class.
      */
@@ -50,7 +56,9 @@ public class GUIController implements Initializable {
     @FXML
     private TextField addressField;
     
-    
+    public void injectBusiness(IBusiness business){
+        this.businessFacade = business; 
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -72,6 +80,7 @@ public class GUIController implements Initializable {
 
     @FXML
     private void addButton(javafx.event.ActionEvent event) {
+        businessFacade.
     }
     
 }
