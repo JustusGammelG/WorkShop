@@ -5,7 +5,9 @@
  */
 package GUI;
 
+import Acquaintance.IBusiness;
 import Business.Building;
+import Business.BusinessFacade;
 import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -27,12 +29,16 @@ import javafx.scene.control.ToggleGroup;
  */
 public class GUIController implements Initializable {
 
+    static IBusiness business;
+    
+    public static void injectBusiness(IBusiness _business) {
+        business = _business;
+    }
+    
     @FXML
     private Tab buildingTab;
     @FXML
     private ListView<Building> buildingListView;
-    private TextField nameField;
-    private TextField adressField;
     @FXML
     private Tab readingTab;
 
@@ -73,17 +79,12 @@ public class GUIController implements Initializable {
         buildingListView.setItems(buildings);
         
     }
-    
-    //Add Building method
-    private void addButton(ActionEvent event) {
-        if (!nameField.getText().equals("") && !adressField.getText().equals("")){
-            Building newBuilding = new Building(nameField.getText(), adressField.getText());
-            buildings.add(newBuilding);
-            nameField.clear();
-            adressField.clear();
-        }
         
+     @FXML
+    private void addBuilding(ActionEvent event) {
+        if(buildingNameField.getText() != "" && buildingAddressField.getText() != "") {
+            business.addBuilding(buildingNameField.getText(), buildingAddressField.getText());
+        }
     }
-
-    
+  
 }
