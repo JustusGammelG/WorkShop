@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package Acquaintance;
-import Business.BusinessFacade;
+
+
 import java.util.ArrayList;
 
 /**
@@ -13,9 +14,9 @@ import java.util.ArrayList;
  */
 public interface IBusiness {
     
-    public void addBuilding(Building Building);
+    public void addBuilding(String name, String adress);
     
-    public void removeBuilding(Building Building);
+    public void removeBuilding(String name, String adress);
     
     public void addSensor(Building building, String id, String type);
     

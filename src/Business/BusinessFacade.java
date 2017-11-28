@@ -21,11 +21,11 @@ public class BusinessFacade implements IBusiness {
         business = _business;
     }
 
-    ArrayList<Building> buildingList = new ArrayList<Building>();
+    ArrayList<Building> buildingList = new ArrayList();
     
     @Override
-    public void addBuilding(Building Building) {
-        buildingList.add(Building);
+    public void addBuilding(String name, String adress) {
+        buildingList.add(String name, String adress);
         
     }
 

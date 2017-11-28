@@ -5,17 +5,10 @@
  */
 package Acquaintance;
 
-
-
 /**
  *
  * @author Alexa
  */
-public interface IUI {
-    
-    
-    void injectBusiness(IBusiness _busines);
-
-    void startApplication(String[] args);
-    
+public interface IInstallation {
+    //For methods whos parameters needs info from both Building AND Sensor.
 }

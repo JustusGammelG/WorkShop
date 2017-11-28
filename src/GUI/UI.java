@@ -6,7 +6,7 @@
 package GUI;
 
 import Acquaintance.IBusiness;
-import GUI.GUIController;
+import Acquaintance.IUI;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +17,7 @@ import javafx.stage.Stage;
  *
  * @author Rol's StudiePC
  */
-public class UI extends Application {
+public class UI extends Application implements IUI {
     
     private static IBusiness business;
     
@@ -33,6 +33,14 @@ public class UI extends Application {
         
         primaryStage.setScene(scene);
         primaryStage.show();
+    }
+    
+    public void injectBusiness(IBusiness _business) {
+        business = _business;
+    }
+    
+    public void startApplication(String[] args) {
+        launch(args);
     }
     
 }

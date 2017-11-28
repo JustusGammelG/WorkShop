@@ -66,10 +66,9 @@ public class GUIController implements Initializable {
     @FXML
     private RadioButton CO2RadioButton;
     @FXML
-    private ToggleGroup sensorTypeToggleGroup;
-    @FXML
     private RadioButton temperatureRadioButton;
-    
+    @FXML
+    private ToggleGroup sensorTypeToggleGroup;
     
     
     @Override
@@ -78,7 +77,8 @@ public class GUIController implements Initializable {
         buildingListView.setItems(buildings);
         
     }
-        
+    
+    @FXML
     private void addBuilding(ActionEvent event) {
         if(!"".equals(buildingNameField.getText()) || !"".equals(buildingAddressField.getText())) {
             Building newBuilding = new Building(buildingNameField.getText(), buildingAddressField.getText());
@@ -88,8 +88,6 @@ public class GUIController implements Initializable {
         }
     }
 
-    @FXML
-    private void addBuilding(javafx.event.ActionEvent event) {
-    }
+    
   
 }

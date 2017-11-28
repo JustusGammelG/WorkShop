@@ -5,6 +5,12 @@
  */
 package Starter;
 
+import Acquaintance.IBusiness;
+import Acquaintance.IUI;
+import Business.BusinessFacade;
+import GUI.GUIController;
+import GUI.UI;
+
 /**
  *
  * @author Alexa
@@ -15,7 +21,11 @@ public class Starter {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        IBusiness business = new BusinessFacade();
+        IUI ui = new UI();
+        
+        
     }
     
 }
