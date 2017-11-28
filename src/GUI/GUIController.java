@@ -47,7 +47,6 @@ public class GUIController implements Initializable {
      */
     
     private ObservableList<Building> buildings;
-    private Object listView;
     @FXML
     private TextField buildingNameField;
     @FXML
@@ -80,11 +79,17 @@ public class GUIController implements Initializable {
         
     }
         
-     @FXML
     private void addBuilding(ActionEvent event) {
         if(!"".equals(buildingNameField.getText()) || !"".equals(buildingAddressField.getText())) {
-            business.addBuilding();
+            Building newBuilding = new Building(buildingNameField.getText(), buildingAddressField.getText());
+            buildings.add(newBuilding);
+            buildingNameField.clear();
+            buildingAddressField.clear();
         }
+    }
+
+    @FXML
+    private void addBuilding(javafx.event.ActionEvent event) {
     }
   
 }
